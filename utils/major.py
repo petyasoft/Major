@@ -75,6 +75,20 @@ class Major:
                 
                 await self.user()
                 await asyncio.sleep(random.uniform(*config.MINI_SLEEP))
+                await asyncio.sleep(random.uniform(*config.MINI_SLEEP))
+                if random.randint(0,3) == 0 and config.JOIN_SQUAD:
+                    if user['squad_id'] == None:
+                        subscribe=True
+                        tasks = await self.get_tasks(is_daily=False)
+                        for task in tasks:
+                            if task['id'] == 27:
+                                subscribe = False
+                        if not subscribe:
+                            async with self.client:
+                                ans = await self.client.join_chat('starsmajor')
+                            await self.do_task(task_id=27)
+                        await self.join_squad()
+                    await asyncio.sleep(random.uniform(*config.MINI_SLEEP))
 
                 await self.get_streak()
                 await self.visit()
