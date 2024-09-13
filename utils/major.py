@@ -73,8 +73,7 @@ class Major:
                     await self.session.close()
                     return 0
                 
-                await self.user()
-                await asyncio.sleep(random.uniform(*config.MINI_SLEEP))
+                user = await self.user()
                 await asyncio.sleep(random.uniform(*config.MINI_SLEEP))
                 if random.randint(0,3) == 0 and config.JOIN_SQUAD:
                     if user['squad_id'] == None:
