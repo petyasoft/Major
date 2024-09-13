@@ -220,6 +220,13 @@ class Major:
         resp = await self.session.get(f"https://major.bot/api/users/{self.user_info.id}/")
         return await resp.json()
 
+    async def join_squad(self):
+        resp = await self.session.post('https://major.bot/api/squads/1916292383/join/')
+        if 'detail' in await resp.json():
+            return False
+        if (await resp.json())['status'] == 'ok':
+            logger.success(f"join_squad | Thread {self.thread} | {self.name} | Вступил в сквад")
+            
     async def login(self):
         try:
             tg_web_data = await self.get_tg_web_data()
