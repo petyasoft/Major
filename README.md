@@ -82,7 +82,7 @@
 ---
 
 DONATIONS 
-
+```txt
 ton   : UQCLxqnBscAH1i8WNU2qfqXrAKCd5AoNgbuNrvZHTZOLI3Yg
 
 sol   : BKmvLTyW29Pkb1yixJrUh6q6JgCkyqY5VGAN5DwgLatK
@@ -98,7 +98,7 @@ trc20 : TN6qKhsbjB1WaetixdRigNrmUw1MCqAyh3
 dash  : Xu4VUgxQTKk5URkbgMiZv6uLzJpHR4NH6y
 
 zec   : t1aFA4poLSA6psJ1pbsK63MeXKQ6ECkqz5M
-
+```
 
 Thank you for using Mahor Telegram Bot! Don't forget to follow our [Telegram channel](https://t.me/petyasofts) for updates.
 
