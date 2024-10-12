@@ -17,6 +17,8 @@ WORKDIR = "sessions/"
 
 # использование прокси
 USE_PROXY = True # True/False
+# проверять прокси
+CHECK_PROXY = True
 
 # реф код, идет после startapp=
 REF_CODE = '707649803'
